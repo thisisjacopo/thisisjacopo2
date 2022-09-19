@@ -5,13 +5,13 @@
 }
 
 body {
-  background-image: url(./assets/bkg.png);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  color: rgb(233, 233, 233);
+  color: rgb(29, 29, 29);
   font-family: "Source Sans Pro", sans-serif;
-  
+}
+
+#all-content {
+  width: 100%;
+  height: 100%;
 }
 
 .navbar-container {
@@ -22,12 +22,14 @@ body {
 
 nav {
   width: 90%;
-  margin-left: 5%;
-  height: 100%;
+  left: 5%;
+  height: 5em;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  border-bottom: 1px solid rgb(29, 29, 29);
+  position: fixed;
 }
 
 nav ul {
@@ -41,6 +43,31 @@ nav ul {
 
 li {
   margin: 25px;
+  cursor: pointer;
+}
+
+.navbar-link {
+  display: inline-block;
+  position: relative;
+  color: rgb(29, 29, 29);
+}
+
+.navbar-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(29, 29, 29);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .main-contenct-container {
@@ -55,21 +82,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.05;
-}
-
-.section-container::before {
-  width: 100%;
-  height: 100vh;
-  background-image: url(./assets/images.jpeg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.005;
-  content: "";
 }
 
 @media only screen and (max-width: 900px) {
