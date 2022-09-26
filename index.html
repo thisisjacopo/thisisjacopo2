@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
       rel="stylesheet" />
   </head>
   <body>
@@ -19,48 +21,103 @@
           <div class="navbar-links">
             <ul class="nav-ul">
               <li class="navbar-link">Projects</li>
-              <li class="navbar-link">Generetive arts</li>
-              <li class="navbar-link">Who am i</li>
+              <li class="navbar-link">
+                <a
+                  href="./assets/Jacopo_Rodighiero_CV.pdf"
+                  download="Jacopo_Rodighiero_Cv"
+                  target="_blank">
+                  CV</a
+                >
+              </li>
               <li class="navbar-link">Contacts</li>
             </ul>
           </div>
         </nav>
       </div>
+      <div class="container-menu-right">
+        <div class="container-logos-menu">
+          <a class="favilink" href="https://github.com/thisisjacopo"
+            ><i class="fab fa-github fa-4x"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/thisisjacopo/" class="favilink"
+            ><i class="fab fa-linkedin-in fa-4x"></i
+          ></a>
+          <a href="https://twitter.com/thisisjacopo" class="favilink"
+            ><i class="fab fa-twitter fa-4x"></i
+          ></a>
+          <a
+            href="https://stackoverflow.com/users/12867227/jacopo"
+            class="favilink"
+            ><i class="fab fa-stack-overflow fa-4x"></i
+          ></a>
+        </div>
+      </div>
       <div class="main-contenct-container">
         <div class="section-container">
           <div class="section-one">
-            <div class="project-btn">
-              <div class="btn-text-container">My projects</div>
+            <h1 class="item1">
+              <span class="span1">Full stack</span><br /><span class="span2"
+                >+</span
+              ><br /><span class="span3">DevOps</span>
+            </h1>
+            <div class="item2">
+              <div class="scroll-items-container">
+                <div class="each-item">
+                  <i class="fa-brands fa-js fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-react fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-node fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-github-alt fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-google fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-aws fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-solid fa-recycle fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-docker fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-brands fa-python fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-solid fa-microscope fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-regular fa-shuttle-space fa-4x"></i>
+                </div>
+                <div class="each-item">
+                  <i class="fa-solid fa-shield-halved fa-4x"></i>
+                </div>
+              </div>
             </div>
-            <div class="line"></div>
           </div>
         </div>
       </div>
     </div>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.144.0/three.min.js"
-      integrity="sha512-a+99cBAt+ou5bThiz5wJeuvXSrZVqZctMU5L8MWaLEc3PB+DPWMK3UycRong0zWYyhavY8HT0YyB/jtJD1S/yQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+      integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo="
+      crossorigin="anonymous"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"
-      integrity="sha512-pRyRPpj2sawdxHO0jNYY8003ulVdXJlZCEJMg8Syhs6hwoViy6SLpI0F9/byRnYibMdzYz0ynraWpLAhr2KoCQ=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      integrity="sha256-3arngJBQR3FTyeRtL3muAGFaGcL8iHsubYOqq48mBLw="
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script>
-      VANTA.FOG({
-        el: "#all-content",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        baseColor: 0xebebeb,
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script>
-      gsap.fromTo(".line", { x: -40, fill: "blue" }, { x: 40, fill: "green" });
-    </script>
+      referrerpolicy="no-referrer" />
+    <script src="./app.js"></script>
   </body>
 </html>
