@@ -15,3 +15,4 @@ gsap.fromTo(
   { y: 10 },
   { x: 0, y: -135, duration: 10, repeat: -1, yoyo: true, ease: "sine.inOut" }
 );
+
